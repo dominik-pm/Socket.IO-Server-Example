@@ -8,7 +8,7 @@ app.get("/", function(req, res)
 });
 app.use("/client", express.static(__dirname + "/client"));
 
-var port = 80;
+var port = 8080;
 server.listen(port);
 console.log("Server started. Port = " + port);
 
