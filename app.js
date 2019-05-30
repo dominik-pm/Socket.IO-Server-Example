@@ -17,7 +17,6 @@ var io = require("socket.io")(server, {});
 io.sockets.on("connection", function(socket)
 {
     console.log("socket connection");
-
     socket.on('connectionSuccessful', function(msg) {
         console.log(socket.id + ' just sent a message: ' + msg);
     });
